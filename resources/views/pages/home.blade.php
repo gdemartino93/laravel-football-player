@@ -5,6 +5,6 @@
 
 @section('contents')
     @foreach ($players as $player)
-        <span>elemento</span>
+        @include('components.player')
     @endforeach
 @endsection
