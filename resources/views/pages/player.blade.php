@@ -1,7 +1,7 @@
 @extends('layouts.main-layout')
 
 @section('title')
-    <title>Giocatore X</title>
+    <title>Giocatore: {{$player["name"]}} {{$player["surname"]}}</title>
 @endsection
 
 @section('contents')
