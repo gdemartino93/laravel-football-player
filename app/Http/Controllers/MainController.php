@@ -15,4 +15,13 @@ class MainController extends Controller
 
         return view('pages.home' , $data);
     }
+    public function player($id){
+
+        $player = Player::Find($id);
+        
+        $data = ["player" => $player];
+
+
+        return view('pages.player', $data);
+    }
 }

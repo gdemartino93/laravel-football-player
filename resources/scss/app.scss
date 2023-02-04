@@ -13,15 +13,25 @@ header{
     justify-content: center;
     gap: 10px;
     margin: 50px auto;
-    .myCard{
-        background: darkseagreen;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid black;
-        padding: 5px;
-        img{
-            border-radius: 50%;
+    a{
+        text-decoration: none;
+        color: inherit;
+        .myCard{
+            background: darkseagreen;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            padding: 5px;
+            img{
+                border-radius: 50%;
+            }
         }
     }
-    
+}
+.prova{
+    .myCard{
+       h5{
+        color: red;
+       }
+    }
 }

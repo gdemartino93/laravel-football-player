@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [MainController::class,'home'])
         -> name('player.home');
+Route::get('/player/{id}', [MainController::class,'player'])
+        -> name('player.single');
