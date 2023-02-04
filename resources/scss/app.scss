@@ -1,1 +1,9 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+header{
+    height: 10vh;
+    background-color: orange;
+    h1{
+        color: red;
+    }
+}
