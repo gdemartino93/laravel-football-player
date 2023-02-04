@@ -9,7 +9,7 @@
             <span class="fw-bold">Data di Nascita:</span>
             <span>{{ $player['date_of_birth'] }}</span>
             <span class="fw-bold">Valore di Mercato:</span>
-            <span class="text-success fw-bold">{{ $player['market_value'] }}</span>
+            <span class="text-success fw-bold">{{number_format($player['market_value'],0,'.','.') }} &euro;</span>
             <span class="fw-bold">E' in una squadra?</span>
             {{-- operatore ternaio poichè returnava 1 o 0 per vero e falso --}}
             <span>{{ $player['has_a_team'] ? "Si" : "No" }}</span>
