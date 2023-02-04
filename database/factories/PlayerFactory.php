@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use Faker\Provider\it_IT\Person;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,12 +18,12 @@ class PlayerFactory extends Factory
     public function definition()
     {
         return [
-            'name' => fake() -> name(),
-            'surname' => fake() -> surname(),
-            'img' => fake() -> img(),   
-            'date_of_birth' => fake() -> date_of_birth(),
-            'market_value' => fake() -> market_value(),
-            'have_a_team' => fake() -> have_a_team()
+            'name' => fake() -> name(null,'male'),
+            'surname' => fake() -> lastName(), 
+            'img' => fake() -> imageUrl(100,100,'people',true) ,   
+            'date_of_birth' => fake() -> date(),
+            'market_value' => fake() -> numberBetween(0,1000000000),
+            'have_a_team' => fake() -> boolean()
         ];
     }
 }
