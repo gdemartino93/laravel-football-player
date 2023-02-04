@@ -17,7 +17,12 @@ class PlayerFactory extends Factory
     public function definition()
     {
         return [
-            
+            'name' => fake() -> name(),
+            'surname' => fake() -> surname(),
+            'img' => fake() -> img(),   
+            'date_of_birth' => fake() -> date_of_birth(),
+            'market_value' => fake() -> market_value(),
+            'have_a_team' => fake() -> have_a_team()
         ];
     }
 }
