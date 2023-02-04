@@ -1,5 +1,6 @@
 @extends('layouts.main-layout')
 
+{{-- prende il nome e cognome del singolo giocatore e lo mostra nel titolo --}}
 @section('title')
     <title>Giocatore: {{$player["name"]}} {{$player["surname"]}}</title>
 @endsection
