@@ -21,7 +21,7 @@ return new class extends Migration
             $table -> string("img") -> nullable(true);
             $table -> date("date_of_birth");
             $table -> integer("market_value") ->unsigned();
-            $table -> boolean("have_a_team");
+            $table -> boolean("has_a_team");
 
             $table->timestamps();
         });

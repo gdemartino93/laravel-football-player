@@ -18,12 +18,12 @@ class PlayerFactory extends Factory
     public function definition()
     {
         return [
-            'name' => fake() -> name(null,'male'),
+            'name' => fake() -> firstNameMale(),
             'surname' => fake() -> lastName(), 
             'img' => fake() -> imageUrl(100,100,'people',true) ,   
             'date_of_birth' => fake() -> date(),
-            'market_value' => fake() -> numberBetween(0,1000000000),
-            'have_a_team' => fake() -> boolean()
+            'market_value' => fake() -> numberBetween(1000000,300000000),
+            'has_a_team' => fake() -> boolean()
         ];
     }
 }

@@ -4,7 +4,9 @@
 @endsection
 
 @section('contents')
-    @foreach ($players as $player)
-        @include('components.player')
-    @endforeach
+    <div class="wrapper container">
+        @foreach ($players as $player)
+            @include('components.player')
+        @endforeach
+    </div>
 @endsection

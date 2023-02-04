@@ -7,3 +7,17 @@ header{
         color: white;
     }
 }
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 50px auto;
+    .myCard{
+        background: darkseagreen;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+    }
+    
+}
