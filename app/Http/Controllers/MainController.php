@@ -31,4 +31,24 @@ class MainController extends Controller
         return redirect() -> route('player.home');
         
     }
+    public function addPlayer(){
+        return view('pages.addnew');
+    }
+    public function storePlayer(Request $request){
+        
+        $data = $request -> all();
+
+        $newPlayer = new Player();
+        $newPlayer -> name = $data['name'];
+        $newPlayer -> surname = $data['surname'];
+        $newPlayer -> img = $data['img'];
+        $newPlayer -> date_of_birth = $data['name'];
+        $newPlayer -> market_value = $data['market_value'];
+        $newPlayer -> has_a_team = $data['has_a_team'] ? 1 : 0;
+
+        $newPlayer -> save();
+
+        return redirect() -> route('player.home');
+
+    }
 }

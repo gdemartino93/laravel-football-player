@@ -21,7 +21,7 @@ class PlayerFactory extends Factory
             'name' => fake() -> firstNameMale(),
             'surname' => fake() -> lastName(), 
             'img' => fake() -> imageUrl(100,100,'people',true) ,   
-            'date_of_birth' => fake() -> date(),
+            'date_of_birth' => fake() -> date('d-m-Y'),
             'market_value' => fake() -> numberBetween(1000000,300000000),
             'has_a_team' => fake() -> boolean()
         ];

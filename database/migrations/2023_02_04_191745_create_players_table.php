@@ -19,7 +19,7 @@ return new class extends Migration
             $table -> string("name" , 50);
             $table -> string("surname",50);
             $table -> string("img") -> nullable(true);
-            $table -> date("date_of_birth");
+            $table -> string("date_of_birth");
             $table -> integer("market_value") ->unsigned();
             $table -> boolean("has_a_team");
 
