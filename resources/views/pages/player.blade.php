@@ -7,7 +7,7 @@
 
 @section('contents')
     <div class="wrapper container">
-        <div class="col-12 prova">
+        <div class="col-12 mycardSingle">
             @include('components.player')
         </div>
         <div>
