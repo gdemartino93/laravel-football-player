@@ -24,4 +24,11 @@ class MainController extends Controller
 
         return view('pages.player', $data);
     }
+    public function deletePlayer($id){
+        $player = Player::Find($id);
+        $player -> delete();
+
+        return redirect() -> route('player.home');
+        
+    }
 }
